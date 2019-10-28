@@ -16,4 +16,4 @@ washington.csv
 bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+It accomplished by a great help of Udacity tutors.
