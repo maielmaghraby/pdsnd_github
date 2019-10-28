@@ -6,7 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-def get_filters():
+def apply_filters():
     """
     Asks user to specify a city, month, and day to analyze.
     does not accept wrong responses.
@@ -170,18 +170,28 @@ def user_stats(df):
 
 def main():
     while True:
-        city, month, day = get_filters()
+        city, month, day = apply_filters()
         df = load_data(city, month, day)
 
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+<<<<<<< HEAD
 
         data = input('Would you like to view raw data? Enter yes or no.')
         while data.lower() == 'yes':
+||||||| merged common ancestors
+        
+        data = input('Would you like to view raw data? Enter yes or no.')
+        while data.lower() == 'yes':
+=======
+
+        raw_data = input('Would you like to view raw data? Enter yes or no.')
+        while raw_data.lower() == 'yes':
+>>>>>>> refactoring
             count = 0
-            if data.lower() == 'yes':
+            if raw_data.lower() == 'yes':
                 count += 5
                 print(df.iloc[: count])
                 continue
