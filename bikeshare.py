@@ -177,19 +177,9 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-<<<<<<< HEAD
-
-        data = input('Would you like to view raw data? Enter yes or no.')
-        while data.lower() == 'yes':
-||||||| merged common ancestors
-        
-        data = input('Would you like to view raw data? Enter yes or no.')
-        while data.lower() == 'yes':
-=======
 
         raw_data = input('Would you like to view raw data? Enter yes or no.')
         while raw_data.lower() == 'yes':
->>>>>>> refactoring
             count = 0
             if raw_data.lower() == 'yes':
                 count += 5
