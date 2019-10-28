@@ -10,7 +10,7 @@ def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
     does not accept wrong responses.
-    
+
     Returns:
         (str) city - name of the city to analyze (chicago, new york city, washington)
         (str) month - name of the month (january, february, march, april, may, june) to filter by, or "all" to apply no month filter
@@ -188,6 +188,7 @@ def main():
             else:
                 break
 
+        # TO do: Asks the user if he/she wants to start the process again.
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
